@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+    .options li {
+      margin: 8px 0;
+    }
+    .options input {
+      margin-right: 10px;
+    }
+    .quiz-footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .btn {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .score {
+      font-size: 20px;
+      font-weight: bold;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-container">
+  <div class="quiz-header">
+    <h1>Interactive Quiz</h1>
+    <p>Answer the questions and see your score!</p>
+  </div>
+  <div id="quiz"></div>
+  <div class="quiz-footer">
+    <button class="btn" onclick="submitQuiz()">Submit</button>
+    <p id="score" class="score"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
